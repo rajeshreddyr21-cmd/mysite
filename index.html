@@ -187,7 +187,9 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
 .bubble{padding:1rem 1.2rem;border-radius:20px 20px 20px 4px;background:rgba(47,107,255,.2);border:1px solid rgba(122,162,255,.35)}
 .bubble b{color:var(--text)}
 .social{display:flex;flex-wrap:wrap;gap:.7rem}
-.social a{display:inline-block;padding:.55rem 1.3rem;border-radius:999px;border:1px solid var(--edge);background:rgba(255,255,255,.06);font-weight:700;font-size:.9rem;transition:background .2s,border-color .2s}
+.social a{display:flex;flex-direction:column;padding:.7rem 1.3rem;border-radius:18px;border:1px solid var(--edge);background:rgba(255,255,255,.06);transition:background .2s,border-color .2s}
+.social a b{font-size:.9rem}
+.social a span{font-size:.8rem;color:var(--muted);word-break:break-all}
 .social a:hover{background:rgba(255,46,77,.2);border-color:var(--red-soft)}
   font:inherit;color:var(--text);padding:.9rem 1.1rem;border-radius:16px;resize:vertical;
   background:rgba(0,0,0,.3);border:1px solid var(--edge);
@@ -265,6 +267,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
     <div class="profile-info">
       <strong>Rajesh Reddy</strong>
       <span>B.Tech CSE, IIIT Raichur</span>
+      <span>Roll No: CS26B1006</span>
     </div>
     <span class="chip chip-a glass">C</span>
     <span class="chip chip-b glass">Python</span>
@@ -295,6 +298,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
 
       <table class="info-table">
         <caption>Quick facts</caption>
+        <tr><th scope="row">Roll Number</th><td>CS26B1006</td></tr>
         <tr><th scope="row">College</th><td>IIIT Raichur</td></tr>
         <tr><th scope="row">Course</th><td>B.Tech, CSE</td></tr>
         <tr><th scope="row">Academic Year</th><td>First Year</td></tr>
@@ -454,9 +458,9 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
       <p class="bubble"><b>Hello, World!</b> Hi Rajesh! Let's connect.</p>
       <h3>Find me on</h3>
       <ul class="social">
-        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="mailto:rajesh@example.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/rajesh-reddy-49164b429" target="_blank" rel="noopener"><b>LinkedIn</b><span>rajesh-reddy-49164b429</span></a></li>
+        <li><a href="https://www.instagram.com/rajesh_reddy_a/" target="_blank" rel="noopener"><b>Instagram</b><span>@rajesh_reddy_a</span></a></li>
+        <li><a href="mailto:rajeshreddyr21@gmail.com"><b>Email</b><span>rajeshreddyr21@gmail.com</span></a></li>
       </ul>
     </div>
   </div>
