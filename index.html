@@ -34,14 +34,13 @@ a{color:inherit;text-decoration:none}
 ul,ol{list-style:none}
 img{max-width:100%;display:block}
 
-/* background light */
 .glow{position:fixed;z-index:-1;border-radius:50%;filter:blur(110px);opacity:.55;pointer-events:none}
 .glow-blue{width:60vw;height:60vw;left:-15vw;top:-10vw;background:var(--blue);animation:driftA 22s ease-in-out infinite alternate}
 .glow-red{width:50vw;height:50vw;right:-12vw;top:35vh;background:var(--red);opacity:.4;animation:driftB 26s ease-in-out infinite alternate}
 @keyframes driftA{to{transform:translate(12vw,18vh) scale(1.15)}}
 @keyframes driftB{to{transform:translate(-14vw,-20vh) scale(.9)}}
 
-/* liquid glass */
+
 .glass{
   position:relative;
   background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.03) 55%,rgba(255,255,255,.07));
@@ -62,7 +61,6 @@ img{max-width:100%;display:block}
 }
 .card{padding:2rem}
 
-/* header */
 .site-header{position:fixed;top:16px;left:0;right:0;z-index:50;display:flex;justify-content:center;padding:0 16px}
 .nav{display:flex;align-items:center;gap:1.5rem;padding:.6rem .7rem .6rem 1.5rem;border-radius:999px;max-width:1100px;width:100%}
 .brand{font-weight:800;font-size:1.25rem;margin-right:auto;letter-spacing:-.02em}
@@ -71,7 +69,6 @@ img{max-width:100%;display:block}
 .nav-links a{padding:.3rem 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
 .nav-links a:hover{color:var(--text);border-color:var(--blue-soft)}
 
-/* buttons */
 .btn{
   display:inline-block;padding:.85rem 1.7rem;border-radius:999px;font-weight:700;font-size:.95rem;
   border:1px solid rgba(255,255,255,.25);cursor:pointer;font-family:inherit;color:#fff;
@@ -85,7 +82,6 @@ img{max-width:100%;display:block}
 .btn-ghost{background:rgba(255,255,255,.07);backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
 .btn-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
 
-/* hero */
 main{max-width:1180px;margin:0 auto;padding:0 24px}
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;min-height:100vh;padding:130px 0 60px}
 .kicker{display:inline-block;font-size:.9rem;font-weight:700;color:var(--red-soft);margin-bottom:1rem;padding:.3rem .9rem;border-radius:999px;border:1px solid rgba(255,46,77,.4);background:rgba(255,46,77,.1)}
@@ -106,7 +102,7 @@ main{max-width:1180px;margin:0 auto;padding:0 24px}
 .chip-c{bottom:26%;left:-16%}
 .chip-d{bottom:8%;right:-8%;border-color:rgba(255,46,77,.5)}
 
-/* marquee */
+
 .marquee{overflow:hidden;margin:0 -24px;padding:1.1rem 0;border-block:1px solid var(--edge);background:rgba(255,255,255,.03);backdrop-filter:blur(10px)}
 .track{display:flex;gap:3rem;width:max-content;animation:scroll 38s linear infinite}
 .track span{font-family:"Sora",sans-serif;font-weight:700;font-size:1.1rem;color:var(--muted);white-space:nowrap}
@@ -121,7 +117,7 @@ main{max-width:1180px;margin:0 auto;padding:0 24px}
 .sub{color:var(--muted);margin-top:.8rem}
 h3{font-size:1.25rem;margin-bottom:.8rem}
 
-/* about */
+
 .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:1.5rem}
 .about-main p{color:var(--muted);margin-bottom:1rem}
 .about-main b{color:var(--text)}
@@ -146,7 +142,7 @@ h3{font-size:1.25rem;margin-bottom:.8rem}
 .stat b{display:block;font-size:2.6rem;background:linear-gradient(120deg,var(--blue-soft),var(--red-soft));-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat span{color:var(--muted);font-size:.92rem}
 
-/* skills */
+
 .table-wrap{padding:1rem;overflow-x:auto}
 .skills-table{width:100%;border-collapse:collapse;min-width:720px}
 .skills-table th,.skills-table td{padding:1.1rem 1.2rem;text-align:left;vertical-align:middle;border-bottom:1px solid var(--edge)}
@@ -160,7 +156,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
 .learning-note{margin-top:1.4rem;color:var(--muted)}
 .learning-note i{color:var(--red-soft)}
 
-/* projects */
+
 .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .project{display:flex;flex-direction:column;padding:1.8rem 1rem 1.6rem;transition:transform .3s}
 .project:hover{transform:translateY(-8px)}
@@ -198,7 +194,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
 .map{margin-top:1.5rem;padding:10px;height:340px}
 .map iframe{width:100%;height:100%;border:0;border-radius:18px;filter:invert(.9) hue-rotate(185deg) saturate(.8)}
 
-/* footer */
+
 .footer{max-width:1180px;margin:110px auto 24px;width:calc(100% - 48px);padding:2rem;display:grid;grid-template-columns:1.3fr 1fr;gap:1.5rem;border-radius:32px}
 .foot-brand{display:flex;gap:1rem;align-items:center}
 .foot-brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--red)}
@@ -207,7 +203,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
 .foot-links a:hover{color:var(--text)}
 .copy{grid-column:1/-1;padding-top:1.2rem;border-top:1px solid var(--edge);color:var(--muted);font-size:.85rem}
 
-/* responsive */
+
 @media (max-width:960px){
   .nav-links{display:none}
   .hero,.about-grid,.edu-grid,.contact-grid,.footer{grid-template-columns:1fr}
@@ -249,7 +245,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
 
 <main>
 
-<!-- Hero -->
+
 <section class="hero">
   <div class="hero-text">
     <p class="kicker"></p>
@@ -332,7 +328,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
   </div>
 </section>
 
-<!-- Skills -->
+
 <section class="section" id="skills">
   <div class="section-head">
     <p class="kicker">My skills</p>
@@ -358,7 +354,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
   <p class="learning-note"><i>Currently learning:</i> JavaScript and Data Structures &amp; Algorithms</p>
 </section>
 
-<!-- Projects -->
+
 <section class="section" id="projects">
   <div class="section-head">
     <p class="kicker">My projects</p>
@@ -400,7 +396,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
   </div>
 </section>
 
-<!-- Education -->
+
 <section class="section" id="education">
   <div class="section-head">
     <p class="kicker">Education</p>
@@ -426,7 +422,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
   </div>
 </section>
 
-<!-- Achievements -->
+
 <section class="section" id="achievements">
   <div class="section-head">
     <p class="kicker">Achievements &amp; Certifications</p>
@@ -443,7 +439,7 @@ code{font-family:ui-monospace,Consolas,monospace;font-size:.85rem;padding:.35rem
   </ul>
 </section>
 
-<!-- Contact -->
+
 <section class="section" id="contact">
   <div class="section-head">
     <p class="kicker">Contact</p>
